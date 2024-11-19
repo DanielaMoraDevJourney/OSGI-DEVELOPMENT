@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1731971808175
+Build-Jdk-Spec: 11
+Bundle-Blueprint: OSGI-INF/blueprint/my-service.xml
+Bundle-Description: car-api OSGi blueprint bundle project.
+Bundle-ManifestVersion: 2
+Bundle-Name: car-api Blueprint Bundle
+Bundle-SymbolicName: car-api
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: org.green.osgi.karaf.car.api;version="1.0.0.SNAPSHOT"
+Export-Service: org.greeb.osgi.karaf.car.MyService;osgi.service.blueprin
+ t.compname=serviceBean
+Import-Package: org.greeb.osgi.karaf.car,org.osgi.service.blueprint;vers
+ ion="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-5.1.1.202006162103
